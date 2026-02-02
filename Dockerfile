@@ -19,7 +19,7 @@ COPY . .
 RUN go build -o bin/cmdb cmdb/main.go
 
 # Start fresh from a smaller image
-FROM alpine:3.22.2
+FROM alpine:3.23.3
 RUN apk add ca-certificates tzdata
 
 ENV TZ=Asia/Ho_Chi_Minh
